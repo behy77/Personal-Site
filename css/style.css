@@ -1,0 +1,187 @@
+/* ANIMATIONS */
+
+@keyframes animatedBackground {
+    from{background-position: 100% 0;}
+    to{background-position: 0 0;}
+}
+
+@-webkit-keyframes animatedBackground {
+    from{background-position: 0 0;}
+    to{background-position: 100% 0;}
+}
+
+@keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@-webkit-keyframes fadein {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+body {
+    background-image: url(http://chitley.com/assets/css/images/bg2.jpg);
+    background-size: 250%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    animation: animatedBackground 40s linear infinite;
+    -webkit-animation: animatedBackground 40s linear infinite;
+}
+
+h1 {
+    font-size: 4em;
+    padding-top: 2.5em;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -0.05em;
+    font-weight: 900;
+    color: #ff777a;
+    opacity: 0;
+    animation: fadein 4s;
+        animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 4s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+p {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+    line-height: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #ff777a;
+    opacity: 0;
+    animation: fadein 4s;
+        animation-delay: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 4s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+ 
+}
+
+#header {
+    text-align: center;
+    line-height: 8em;
+    cursor: default;
+    display: inline-block;
+    width: 100%;
+    top: -1em;
+}
+
+li {
+    display: inline;
+    padding: 0.5em;
+    
+}
+
+#footer {
+    text-align: center;
+    cursor: default;
+    line-height: 8em;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    height: 6em;
+    width: 100%;
+    color: #ff777a;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s;
+}
+
+button {
+    width: 5em;
+    height: 5em;
+    border: 1px solid #ff777a;
+    background: transparent;
+    border-radius: 50%;
+}
+
+ul {
+    margin-right: 2em;
+    margin-top: -1em;
+}
+
+#linkedin {
+    background: url(/images/linkedin-2048-black.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: fadein 3s;
+        animation-delay: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 3s;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#github {
+    background: url(/images/Octicons-mark-github.svg.png);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    animation: fadein 3s;
+        animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 3s;
+    -webkit-animation-delay: 3.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#resume {
+    background: url(/images/resume.png);
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+    opacity: 0;
+    animation: fadein 3s;
+        animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#project {
+    background: url(/images/project.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    opacity: 0;
+    animation: fadein 3s;
+        animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 3s;
+    -webkit-animation-delay: 2.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#email {
+    background: url(/images/mail.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    opacity: 0;
+    animation: fadein 3s;
+        animation-delay: 4s;
+    animation-fill-mode: forwards;
+    -webkit-animation: fadein 3s;
+    -webkit-animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* HOVER */
+button:hover {
+    border: 1px solid #ffffff;
+}
+
+/* FOCUS */
+button:focus {
+    outline: 0;
+}
